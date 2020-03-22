@@ -7,7 +7,7 @@
 
     $: style = `
             grid-template-columns: repeat(${numCols},1fr);
-            grid-template-rows: minxmax(${minHeight},auto);
+            grid-template-rows: minxmax(${minHeight}px,auto);
             grid-gap: ${gap}px;
         `;
 </script>
@@ -15,6 +15,7 @@
   .base {
     display: grid;
     grid-auto-flow: dense;
+    background-color: #aaa;
   }
 </style>
 
